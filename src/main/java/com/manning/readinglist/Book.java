@@ -7,8 +7,9 @@ import javax.persistence.Id;
 
 @Entity
 public class Book {
+
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 	private String reader;
 	private String isbn;
@@ -63,4 +64,5 @@ public class Book {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+
 }

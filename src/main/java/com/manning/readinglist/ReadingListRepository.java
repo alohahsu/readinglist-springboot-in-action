@@ -5,4 +5,5 @@ import java.util.List;
 
 public interface ReadingListRepository extends JpaRepository<Book, Long> {
 	List<Book> findByReader(String reader);
+	// who will implement this interface? Spring Data implement it automatically.
 }

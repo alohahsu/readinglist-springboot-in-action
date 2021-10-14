@@ -18,7 +18,6 @@ public class Reader implements UserDetails {
 	private String fullname;
 	private String password;
 
-	@Override
 	public String getUsername() {
 		return username;
 	}
@@ -35,7 +34,6 @@ public class Reader implements UserDetails {
 		this.fullname = fullname;
 	}
 
-	@Override
 	public String getPassword() {
 		return password;
 	}

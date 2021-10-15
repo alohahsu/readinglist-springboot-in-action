@@ -19,22 +19,3 @@ server:
 amazon:
   associateId: bostonhsu
 
-logging:
-  level: info
-
----
-spring:
-  profiles: development
-
-logging:
-  level: debug
----
-
-spring:
-  profiles: production
-
-logging:
-  path: /tmp/
-  file: BookWorm.log
-  level:
-    root: WARN

@@ -3,3 +3,6 @@ spring:
     banner-mode: console
   thymeleaf:
     cache: false
+
+# I type this command in Terminal for generating a key file.
+# keytool -keystore mykeys.jks -genkey -alias tomcat -keyalg RSA

@@ -3,16 +3,16 @@ spring:
     banner-mode: console
   thymeleaf:
     cache: false
-  profiles:
-    active: production  #可以是别的属性值 development or debug
-
-server:
-  port: 8443
-  ssl:
-    key-store: file:////Users/bostonhsu/IdeaProjects/readinglist/mykeys.jks
-    # or put mykeys.jks in jar, and use classpath: URL to point it.
-    key-store-password: letmein
-    key-password: letmein
+#  profiles:
+#    active: production  #可以是别的属性值 development or debug
+#
+#server:
+#  port: 8443
+#  ssl:
+#    key-store: file:////Users/bostonhsu/IdeaProjects/readinglist/mykeys.jks
+#    # or put mykeys.jks in jar, and use classpath: URL to point it.
+#    key-store-password: letmein
+#    key-password: letmein
 
 # I type this command in Terminal for generating a key file.
 # keytool -keystore mykeys.jks -genkey -alias tomcat -keyalg RSA

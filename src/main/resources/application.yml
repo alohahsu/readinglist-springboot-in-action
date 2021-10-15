@@ -18,3 +18,23 @@ server:
 # keytool -keystore mykeys.jks -genkey -alias tomcat -keyalg RSA
 amazon:
   associateId: bostonhsu
+
+logging:
+  level: info
+
+---
+spring:
+  profiles: development
+
+logging:
+  level: debug
+---
+
+spring:
+  profiles: production
+
+logging:
+  path: /tmp/
+  file: BookWorm.log
+  level:
+    root: WARN

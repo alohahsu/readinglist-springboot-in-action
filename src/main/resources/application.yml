@@ -3,6 +3,8 @@ spring:
     banner-mode: console
   thymeleaf:
     cache: false
+  profiles:
+    active: production  #可以是别的属性值 development or debug
 
 server:
   port: 8443
